@@ -1,0 +1,45 @@
+
+.container,
+pre {
+    outline: 3px solid rgb(38, 96, 129);
+    border-radius: 5px;
+    padding: 1rem;
+    width: min(90%, 500px);
+    margin-inline: auto;
+}
+
+.btn {
+    background-color: lightblue;
+    border: 2px solid slategray;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow:2px 2px 4px #000000;
+}
+
+.btn i::before {
+    margin-right: 12px;
+}
+
+.btn:hover {
+    background-color: rgb(38, 96, 129);
+}
+
+button>* {
+    flex: 1;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.file-name-input {
+    background: rgb(83, 82, 82);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    padding: max(3vh, 1rem);
+}
