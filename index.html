@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,53 @@
     <title>File Directory API</title>
     <script type="module" src="/src/index.js"></script>
 </head>
+
 <body>
     <main></main>
     <section class="container" id="panel">
         <button class="btn" id="open-directory" type="button"><i class="fa fa-folder-open">Open Directory</i></button>
         <div class="file-name-input">
             <label>Input the name of the file</label>
-            <input id="inputFileNameToSaveAs" > 
+            <input id="inputFileNameToSaveAs">
         </div>
-        <button class="btn" id="download-file" type="button"><i class="fa fa-download">Download File</i></button>
+        <form id="form">
+            <div class="file-name-input">
+                <legend>File extensions to be included?</legend>
+                <label for="file-extention">Yes</label>
+                <input type="radio" id="file-extention-yes" name="file-extention" value="yes">
+                <label for="file-extention">No</label>
+                <input type="radio" id="file-extention-no" name="file-extention" value="no">
+            </div>
+            <button class="btn" id="download-file" type="button">
+                <i class="fa fa-download">Download File</i>
+            </button>
+        </form>
     </section>
     <pre></pre>
 </body>
-</html>
+<script>
+    let buttons = document.querySelectorAll('#form input');
+    for (button of buttons) {
+        button.dataset.waschecked = "false";
+        button.addEventListener('click', myFunction, false);
+    }
 
+    function myFunction(e) {
+        //console.log(e)
+        if (e.target.dataset.waschecked == "false") {
+
+            for (button of document.querySelectorAll('#form input')) {
+                button.dataset.waschecked = "false";
+            }
+            e.target.dataset.waschecked = "true";
+            e.target.checked = true;
+        } else {
+            for (button of document.querySelectorAll('#form input')) {
+                button.dataset.waschecked = "false";
+            }
+            e.target.checked = false;
+        }
+    }
+</script>
+
+</html>
