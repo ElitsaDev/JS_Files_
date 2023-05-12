@@ -10,3 +10,4 @@ The app can be open in a browser by a Live Web server from VSC.
 Тhe app can be accessed at:
 https://collectingfiles.netlify.app/
 
+![home-view](https://github.com/ElitsaDev/JS_Files_/assets/94979851/68aa0607-4a1f-4710-8413-5a416b8ff4c6)
