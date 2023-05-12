@@ -6,6 +6,7 @@ The user can click on the "Open Directory" button, which will open the Local Fil
 We hope you enjoy this app!
 The app can be open in a browser by a Live Web server from VSC.
 
-## Deploymenт:
-Тhe app has been uploaded and can be accessed at:
+## Deployment
+Тhe app can be accessed at:
 https://collectingfiles.netlify.app/
+
